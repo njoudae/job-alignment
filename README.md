@@ -5,11 +5,11 @@
 ![First](images/localhost_5173_.png)
 
 ## 2)
-![Second](images/localhost_5173_ (1).png)
+![Second](images/localhost_5173_1.png)
 
 ## 3) Result
-![r1](images/localhost_5173_ (5).png)
-![r2](images/localhost_5173_ (4).png)
+![r1](images/localhost_5173_5.png)
+![r2](images/localhost_5173_4.png)
 
 ---
 A complete project for analyzing how well a university course specification aligns with a selected job profile.
