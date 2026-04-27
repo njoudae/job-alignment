@@ -1,7 +1,17 @@
 # Course-Job Alignment Analyzer (Project)
-![Result Screenshot](images/Screenshot%202026-04-27%20194147.png)
-![Project Screenshot](images/Screenshot%202026-04-27%20194229.png)
 
+--- 
+## 1)
+![First](images/localhost_5173_.png)
+
+## 2)
+![Second](images/localhost_5173_ (1).png)
+
+## 3) Result
+![r1](images/localhost_5173_ (5).png)
+![r2](images/localhost_5173_ (4).png)
+
+---
 A complete project for analyzing how well a university course specification aligns with a selected job profile.
 
 It uses:
