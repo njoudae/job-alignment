@@ -1,6 +1,8 @@
-# Course-Job Alignment Analyzer (Local Project)
+# Course-Job Alignment Analyzer (Project)
+![Result Screenshot](images/Screenshot%202026-04-27%20194147.png)
+![Project Screenshot](images/Screenshot%202026-04-27%20194229.png)
 
-A complete local project for analyzing how well a university course specification aligns with a selected job profile.
+A complete project for analyzing how well a university course specification aligns with a selected job profile.
 
 It uses:
 - **Frontend:** React + Vite + Tailwind CSS
@@ -88,7 +90,6 @@ course-job-alignment/
 │   │   ├── jobs.sample.json
 │   │   └── jobs.json   <-- place your real jobs file here
 │   ├── requirements.txt
-│   └── .env.example
 │
 ├── frontend/
 │   ├── public/
@@ -107,7 +108,9 @@ course-job-alignment/
 │   ├── tsconfig.json
 │   ├── tsconfig.node.json
 │   └── vite.config.ts
-│
+├── images/
+│   ├── Screenshot%202026-04-27%20194229.png
+│   ├── Screenshot%202026-04-27%20194147.png
 └── README.md
 ```
 
@@ -321,9 +324,8 @@ A good next step later would be:
 
 ---
 
-## 12) Quick Demo Script for Presentation
+## 12) Demo Script
 
-You can describe the system like this during the demo:
 
 > The system first normalizes the job taxonomy locally, so the user does not face a noisy or inconsistent JSON file directly. Then it guides the user through a hierarchical profession-selection flow. After the user uploads a course specification PDF, the backend extracts text locally, asks GPT-4o to build a structured course profile, and then performs an explainable multi-axis alignment analysis against the selected profession. The final result is shown in a clear modal with score, verdict, detailed gaps, readiness assessment, and actionable recommendations.
 
