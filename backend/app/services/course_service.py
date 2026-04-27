@@ -98,3 +98,4 @@ PDF text:
                 status_code=500,
                 detail=f"Failed to parse course PDF: {exc}",
             ) from exc
+        
