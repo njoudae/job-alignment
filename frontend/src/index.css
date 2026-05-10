@@ -16,3 +16,26 @@ body {
 * {
   box-sizing: border-box;
 }
+.scroll-box {
+  max-height: 260px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.scroll-box::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scroll-box::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 999px;
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 999px;
+}
+
+.scroll-box::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

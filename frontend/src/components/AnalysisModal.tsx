@@ -49,7 +49,7 @@ export default function AnalysisModal({ open, onClose, data }: Props) {
         <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="space-y-6">
             <div className="grid gap-6 md:grid-cols-2">
-              <div className="rounded-3xl border border-slate-200 p-5">
+              <div className="scroll-box rounded-3xl border border-slate-200 p-5">
                 <h4 className="mb-3 text-lg font-semibold text-slate-900">Course Information</h4>
                 <div className="space-y-2 text-sm text-slate-700">
                   <p><span className="font-semibold">Title:</span> {course_profile.course_title || '—'}</p>
@@ -60,7 +60,7 @@ export default function AnalysisModal({ open, onClose, data }: Props) {
                 </div>
               </div>
 
-              <div className="rounded-3xl border border-slate-200 p-5">
+              <div className="scroll-box rounded-3xl border border-slate-200 p-5">
                 <h4 className="mb-3 text-lg font-semibold text-slate-900">Job Information</h4>
                 <div className="space-y-2 text-sm text-slate-700">
                   <p><span className="font-semibold">Job Title:</span> {selected_job.job_title}</p>
@@ -71,7 +71,7 @@ export default function AnalysisModal({ open, onClose, data }: Props) {
               </div>
             </div>
 
-            <div className="rounded-3xl border border-slate-200 p-5">
+            <div className="scroll-box rounded-3xl border border-slate-200 p-5">
               <h4 className="mb-4 text-lg font-semibold text-slate-900">Key Findings</h4>
               <div className="grid gap-4 md:grid-cols-2">
                 <div>
@@ -93,7 +93,7 @@ export default function AnalysisModal({ open, onClose, data }: Props) {
               </div>
             </div>
 
-            <div className="rounded-3xl border border-slate-200 p-5">
+            <div className="scroll-box rounded-3xl border border-slate-200 p-5">
               <h4 className="mb-4 text-lg font-semibold text-slate-900">Practical Readiness & Recommendations</h4>
               <div className="space-y-4 text-sm text-slate-700">
                 <p><span className="font-semibold">Practical Readiness:</span> {result.practical_readiness_assessment}</p>
@@ -112,12 +112,12 @@ export default function AnalysisModal({ open, onClose, data }: Props) {
           </div>
 
           <div className="space-y-6">
-            <div className="rounded-3xl border border-slate-200 p-5">
+            <div className="scroll-box rounded-3xl border border-slate-200 p-5">
               <h4 className="mb-4 text-lg font-semibold text-slate-900">Axis Visualization</h4>
               <AxisRadarChart data={result.axis_scores} />
             </div>
 
-            <div className="rounded-3xl border border-slate-200 p-5">
+            <div className="scroll-box rounded-3xl border border-slate-200 p-5">
               <h4 className="mb-4 text-lg font-semibold text-slate-900">Axis Scores</h4>
               <div className="space-y-4">
                 {result.axis_scores.map((axis) => (
@@ -135,7 +135,7 @@ export default function AnalysisModal({ open, onClose, data }: Props) {
               </div>
             </div>
 
-            <div className="rounded-3xl border border-slate-200 p-5">
+            <div className="scroll-box rounded-3xl border border-slate-200 p-5">
               <h4 className="mb-4 text-lg font-semibold text-slate-900">Main Job Tasks</h4>
               <ul className="list-disc space-y-2 ps-5 text-sm text-slate-700">
                 {selected_job.main_tasks.map((task) => (

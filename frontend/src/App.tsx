@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { BriefcaseBusiness, FileSearch, Sparkles } from 'lucide-react';
+import { BriefcaseBusiness, FileSearch, Loader2, Sparkles } from 'lucide-react';
 import AnalysisModal from './components/AnalysisModal';
 import FileDropzone from './components/FileDropzone';
 import SectionCard from './components/SectionCard';
@@ -93,6 +93,24 @@ export default function App() {
 
   return (
     <main className="min-h-screen bg-[radial-gradient(circle_at_top_right,_rgba(37,99,235,0.10),_transparent_35%),linear-gradient(180deg,#f8fafc_0%,#eef2ff_100%)] px-4 py-8 text-slate-900">
+      {loading && (
+       <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-slate-950/40 backdrop-blur-sm">
+         <div className="w-[90%] max-w-md rounded-3xl border border-white/20 bg-white p-8 text-center shadow-2xl">
+      <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-blue-50">
+        <Loader2 className="h-8 w-8 animate-spin text-blue-700" />
+      </div>
+
+      <h2 className="text-xl font-bold text-slate-900">
+        Analyzing Course Alignment
+      </h2>
+
+      <p className="mt-3 text-sm leading-6 text-slate-600">
+        The system is extracting the course content, analyzing the job profile,
+        and generating the alignment result. Please wait.
+      </p>
+    </div>
+  </div>
+)}
       <div className="mx-auto max-w-7xl">
         <header className="mb-8 rounded-[32px] border border-white/60 bg-white/80 p-8 shadow-soft backdrop-blur">
           <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
